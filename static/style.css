@@ -651,3 +651,14 @@ a.trust-chip:hover { border-color: var(--accent-deep); color: var(--accent-deep)
 .intent-a li{position:relative}
 
 :root{--accent:#FFFFFF;--accent-2:#D6D6D6;--accent-deep:#737373;--accent-ink:#0C1014;--accent-soft:rgba(255,255,255,0.13);--accent-line:rgba(214,214,214,0.32);--accent-glow:rgba(255,255,255,0.45);--hero-glow:rgba(255,255,255,0.10);--hero-glow-2:rgba(255,255,255,0.06);}
+
+/* === SEOGEO-TEXTURE BEGIN === */
+/* treatment T4 */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(52rem 38rem at 82% -10%,color-mix(in srgb,var(--accent) 16%,transparent),transparent 60%),
+    radial-gradient(46rem 40rem at -8% 8%,color-mix(in srgb,var(--accent) 11%,transparent),transparent 58%),
+    radial-gradient(60rem 50rem at 50% 116%,color-mix(in srgb,var(--accent) 8%,transparent),transparent 60%);}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.022;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+/* === SEOGEO-TEXTURE END === */
