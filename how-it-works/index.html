@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fraxswap: Routing & Frax Architecture</title>
+  <meta name="description" content="Fraxswap technical routing architecture, multi-hop liquidity aggregation, and zk-rollup smart contract lock mechanisms on Frax Finance Ecosystem explained in detail.">
+  <link rel="canonical" href="https://fraxswap.github.io/how-it-works/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F6FAFF">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fraxswap: Routing & Frax Architecture">
+  <meta property="og:description" content="Fraxswap technical routing architecture, multi-hop liquidity aggregation, and zk-rollup smart contract lock mechanisms on Frax Finance Ecosystem explained in detail.">
+  <meta property="og:url" content="https://fraxswap.github.io/how-it-works/">
+  <link rel="icon" type="image/png" sizes="256x256" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="stylesheet" href="../style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://fraxswap.github.io/how-it-works/#article",
+        "url": "https://fraxswap.github.io/how-it-works/",
+        "name": "Fraxswap: Routing & Frax Architecture",
+        "description": "Fraxswap technical routing architecture, multi-hop liquidity aggregation, and zk-rollup smart contract lock mechanisms explained.",
+        "inLanguage": "en",
+        "about": {
+          "@type": "SoftwareApplication",
+          "@id": "https://fraxswap.github.io/#app",
+          "name": "Fraxswap",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "All",
+          "url": "https://fraxswap.github.io/"
+        },
+        "dependencies": "Frax Finance Ecosystem, Rollups"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="doc-body">
+  <header class="topbar" aria-label="Site header">
+    <a class="brand" href="../index.html" aria-label="Fraxswap logo">
+      <img src="../favicon.png" width="28" height="28" alt="">
+      <span>Fraxswap</span>
+    </a>
+    <span class="spacer" aria-hidden="true"></span>
+    <nav class="nav" aria-label="Site navigation">
+      <a href="../index.html">Trade</a>
+      <a href="../about/index.html">About</a>
+      <a href="../how-it-works/index.html">How It Works</a>
+      <a href="../supported-chains/index.html">Chains</a>
+      <a href="../security/index.html">Security</a>
+      <a href="../faq/index.html">FAQ</a>
+      <a class="launch-btn" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer nofollow">Launch App</a>
+    </nav>
+  </header>
+
+  <main class="doc-layout">
+    <aside class="sidebar" aria-label="Documentation Navigation">
+      <div class="sidebar-group">
+        <div class="sidebar-title">App Console</div>
+        <div class="sidebar-menu">
+          <a href="../index.html">Fraxswap App</a>
+        </div>
+      </div>
+      <div class="sidebar-group" style="margin-top: 15px;">
+        <div class="sidebar-title">Documentation</div>
+        <div class="sidebar-menu">
+          <a href="../about/index.html">Overview</a>
+          <a href="../how-it-works/index.html" class="active">Architecture</a>
+          <a href="../supported-chains/index.html">Supported Chains</a>
+          <a href="../security/index.html">Security Audits</a>
+          <a href="../faq/index.html">FAQs / Help</a>
+        </div>
+      </div>
+    </aside>
+
+    <article class="doc-content">
+      <h1>Fraxswap Technical Architecture</h1>
+      <p>The core engine of Fraxswap is built on modular smart contracts that perform dynamic multi-hop routing paths. By executing transactions directly inside the secure smart contracts, users can migrate assets including <b>BTC</b>, <b>ETH</b>, <b>SOL</b>, <b>AVAX</b>, and <b>LINK</b> without incurring high layer-1 gas overheads. Liquidity pools are aggregated dynamically, matching assets efficiently to reduce trade slippage.</p>
+
+      <h2>Multi-Hop Solver and Graph Optimization</h2>
+      <p>Fraxswap routes trade demands using an optimized graph solver. According to academic research published by <a class="inline" href="https://www.microsoft.com/en-us/research/" target="_blank" rel="noopener noreferrer">Microsoft Research</a>, distributed network pathfinding algorithms significantly improve concurrent transactional scaling. The routing system completes these complex hops atomically within a single block update. Developers can study how data states aggregate by reviewing technical publications by <a class="inline" href="https://www.ibm.com/" target="_blank" rel="noopener noreferrer">IBM</a> on scalable ledger networks.</p>
+      <p>For a detailed breakdown of integrated rollups and transaction block times, check the <a class="inline" href="../supported-chains/index.html">Fraxswap Supported Networks Database</a>.</p>
+
+      <h2>Smart Contract Verification and Vault Mechanics</h2>
+      <p>Transactions are validated on-chain via smart contracts audited directly on the <a class="inline" href="https://etherscan.io/" target="_blank" rel="noopener noreferrer">Etherscan</a>. These contracts lock assets in source vaults while managing corresponding pegged pool depths dynamically. Security practices defined by the <a class="inline" href="https://www.nist.gov/" target="_blank" rel="noopener noreferrer">NIST</a> guidelines help safeguard cryptographic receipts, preventing contract reentrancy risks and ensuring all operations are executed atomically.</p>
+
+      <div style="text-align: left;">
+        <a class="doc-cta" href="../supported-chains/index.html">View Supported Chains &rsaquo;</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>Fraxswap &mdash; 2026</p>
+  </footer>
+</body>
+</html>
